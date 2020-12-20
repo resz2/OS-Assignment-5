@@ -1,9 +1,9 @@
 compile1:
 # 	Compile your code for first part here
-	nasm -f bin booter_2019459.asm -o booter.bin
+	nasm booter_2019459.asm -o booter.o
 
 run1: compile1
-	qemu-system-x86_64 -fda booter.bin
+	qemu-system-x86_64 -fda booter.o
 # 	 Execute part 1 here
 
 compile2:
